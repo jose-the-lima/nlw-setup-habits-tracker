@@ -18,6 +18,11 @@ header {
   justify-content: space-between;
 
   padding: 48px;
+
+  position: fixed;
+
+  width: 100%;
+  background-color: #09090a;
 }
 
 button {
@@ -43,7 +48,9 @@ button {
 form {
   display: flex;
 
-  padding: 0 38px;
+  padding: 180px 38px 38px;
+
+  width: fit-content;
 }
 
 .habits {
@@ -106,4 +113,10 @@ input {
 input:checked {
   background-color: #8b5cf6;
   border: 2px solid #a78bfa;
+}
+
+@media screen and (max-width: 570px) {
+  header button div {
+    display: none;
+  }
 }
